@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">.
+    <meta name="description" content="My first webpage, with image">
+    <meta name="keywords" content="a website">
+    <meta name="author" content="Ethar Banafa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>A webpage</title>
+    </head>
+    <body>
+        <h1>The guessing game</h1>
+<p id="demo">Pick a number from 1 to 6.</p>
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,6)">Click Me</button>
+<input type="text" id="demo" onclick="para"> 
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function myFunction() {; 
+  var number;
+  if (guess = 4) {
+    alert = "correct";
+  }
+  else {
+    alert= "not correct";
+  }
+  document.getElementById("demo").innerHTML = number;
+}
+ </script>
+ </body>
+</html>
