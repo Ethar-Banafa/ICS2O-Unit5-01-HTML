@@ -11,29 +11,27 @@
     <title>A webpage</title>
     </head>
     <body>
-        <h1>The guessing game</h1>
+<h1>The guessing game</h1>
 <p id="demo">Pick a number from 1 to 6.</p>
-<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,6)">Click Me</button>
+<button onclick="myFunction()">Click Me</button>
 <input type="text" id="demo" onclick="para"> 
 <script>
-number = Math.floor(Math.random() * (6 - 0)) + 0;
-function getRndInteger(0,6) {
-   return Math.floor(Math.random() * (6 - 0)) + 0;
-}
-</script>
-<button onclick="myFunction">click me</button>
-<script>
+let myNumber= 4; 
+myNumber = Math.floor(Math.random() * (6 - 0)) + 0;
 function myFunction() {
- document.getElementById("demo").innerHTML = "number"; 
- function myFunction() { 
-  var number;
-  if (number == guess) {
-    alert = "correct";
+         myNumber = document.getElementById("demo").value;
+         myNumber = +myNumber;
+          if (myNumber < 4) {
+    alert = "not correct";
+  }
+  else if (myNumber == 4 ) {
+    alert= "correct";
   }
   else {
-    alert= "not correct";
+      alert="not correct";
   }
 }
- </script>
- </body>
+         
+</script>
+</body>
 </html>
