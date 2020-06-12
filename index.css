@@ -1,7 +1,7 @@
 body {
     background-color: pink;
 }
- button{ background-color: red;
+ #btn{ background-color: red;
   border: black;
   color: white;
   padding: 17px 16px;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <meta charset="utf-8">.
     <meta name="description" content="My first webpage, with image">
     <meta name="keywords" content="a website">
@@ -9,29 +9,11 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <title>A webpage</title>
-    </head>
-    <body>
-<h1>The guessing game</h1>
-<p id="demo">Pick a number from 1 to 6.</p>
-<button onclick="myFunction()">Click Me</button>
-<input type="text" id="demo" onclick="para"> 
-<script>
-let myNumber= 4; 
-myNumber = Math.floor(Math.random() * (6 - 0)) + 0;
-function myFunction() {
-         myNumber = document.getElementById("demo").value;
-         myNumber = +myNumber;
-          if (myNumber < 4) {
-    alert = "not correct";
-  }
-  else if (myNumber == 4 ) {
-    alert= "correct";
-  }
-  else {
-      alert="not correct";
-  }
-}
-         
-</script>
-</body>
+  </head>
+  <body>
+    <h1>The guessing game</h1>
+    <p id="demo">Choose a number from 1-6.</p>
+    Type a number:<input type="text" id="para">
+    <button id="btn" onclick="myFunction()">Click me</button>
+  </body>
 </html>
